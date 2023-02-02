@@ -1,0 +1,57 @@
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Client</title>
+        <link rel="stylesheet" href="static/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="static/contact.css">
+    </head>
+    <body class="bady"> 
+        <header>
+            <a href="index.html" class="logo">
+                <span>Y</span>our
+                <span>B</span>ook
+            </a>
+            <div class="menuToggle" ></div>
+            <ul class="navbar active">
+                <li><a href="index.html" class="btn-reserve">Déonnexion</a></li>
+          <!----  <li style="margin-left: 15px;"><a href="livre.html#panier"> Panier<i class="fa-solid fa-cart-shopping" style="margin-left: 10px;"></i></a></li>  -->
+            </ul>
+        </header>
+       
+        {% if data %}
+        <table border="5" >      
+        <thead>
+            <tr>
+            <th>Nom</th>
+            <th>Prénom</th>
+            <th>E-mail</th>
+            <th>Téléphne</th>
+            <th>Mot de passe</th>
+            </tr>
+        </thead>
+
+        <tbody>
+        {% for i in data %}
+         
+           <tr>      
+            <td>{{i[0]}}</td>  
+            <td>{{i[1]}}</td>  
+            <td>{{i[2]}}</td>
+            <td>{{i[3]}}</td>
+            <td>{{i[4]}}</td>    
+           </tr>
+        
+         {% endfor %} 
+
+        </tbody>
+         </table>
+        {% endif %}
+    </body>
+    </html>

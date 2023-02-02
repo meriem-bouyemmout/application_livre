@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>update_data</title>
+</head>
+<body>
+
+    
+     <section class="section bady">
+
+
+    <section class="grandcadre">
+        {% if data %}
+        <form method="POST" action="">
+            {% for i in data %}
+            <div class="separation"></div>
+            <div class="corps-formulaire">
+            <div class="gauche"> 
+                <div class="groupe">
+                    <label>Nom de livre</label>
+                    <input type="text" name="nom_de_livre"  >
+                    <i class="fa-solid fa-user" style="margin-top: 8px;"></i>
+                </div>
+                <div class="groupe">
+                    <label>Prix</label>
+                    <input type="number" name="Prix" " >
+                    <i class="fa-solid fa-lock" style="margin-top: 8px;"></i>
+                </div>
+                <div class="groupe">
+                    <label>Type</label>
+                    <input type="text" name="Type" >
+                    <i class="fa-solid fa-user" style="margin-top: 8px;"></i>
+                </div>
+            </div>
+            </div>
+            <div class="pied-formulaire" align="center">
+                <input type="submit" class="sbm" value="update">
+            </div>
+            <div class="separation"></div>
+            
+            {% endfor %}
+            </form>
+        {% endif %}    
+            </section>
+            </section>
+
+    <!----        <footer>
+                <div class="conteneur">
+                    <div clss="elmnt1">
+                        <a href="index.html" class="logo">
+                            <span>Y</span>our
+                            <span>B</span>ook
+                        </a>
+                    </div>
+                    <div class="elemnt2">
+                        <h3>Contact</h3>
+                       <div class="item"> 
+                        <a href="tel:+21340244944" target="_blank"><p><i class="fa-solid fa-phone"></i>05 40 24 49 44</p></a>
+                        <a href="mailto:yourbookhml.com" target="_blank"><p><i class="fa-solid fa-envelope"></i>yourboukhml@gmail.com</p></a>
+                        <a href="https://web.skype.com/8:live:.cid.8e1686a17c8957c6?inviteId=Isp6tN6MVAdY&correlationId=7da63729-ea6f-4675-b803-b6e179fff1c1" target="_blank"><p><i class="fa-brands fa-skype"></i>your_book</p></a>
+                       </div>
+                    </div>
+                    <div class="elemnt3">
+                        <h3>Suivez nous</h3>
+                        <div class="items">
+                            <a href="https://www.facebook.com/profile.php?id=100088963542864" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                            <a href="https://www.instagram.com/accounts/edit/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                            <a href="https://twitter.com/Your_Bookhml" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+                            <a href="https://web.whatsapp.com/"  target="_blank"><i class="fa-brands fa-square-whatsapp"></i></i></a>
+                        </div>
+                    </div>
+        
+        
+                </div>
+        </footer>
+    -->
+</body>
+</html>
